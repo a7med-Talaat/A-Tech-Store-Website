@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make an order</title>
+    <link rel="stylesheet" href="Make an order.css">
+</head>
+<body>
+    <div class="Check-container">
+        <h2>Make an order</h2>
+        <form action="Checkout.html" method="POST">
+            <input type="text" name="firstname" placeholder="First Name" required>
+            <input type="text" name="secondname" placeholder="Second Name" required>
+            <select name="country" required>
+                <option value="" disabled selected>Select Your desired android phone to buy</option>
+                <option value="None">None</option>
+                <option value="R12PP">Realme 12 pro plus</option>
+                <option value="SGS24">Samsung galaxy S24</option>
+                <option value="VY03">Vivo Y03</option>
+            </select>
+            <select name="country" required>
+                <option value="" disabled selected>Select Your desired Laptop to buy</option>
+                <option value="None">None</option>
+                <option value="AZS16">Asus Zenbook S16</option>
+                <option value="AVB">Asus Vivobook</option>
+            </select>
+            <button type="submit">Proceed to checkout</button>
+        </form>
+
+        
+        <a href="Home.html" class="back-btn">Back to Home</a>
+    </div>
+</body>
+</html>

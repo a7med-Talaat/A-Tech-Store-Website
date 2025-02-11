@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="Checkout.css">
+</head>
+<body>
+    <div class="Check-container">
+        <h2>Checkout</h2>
+        <form action="Home.html" method="POST">
+            <input type="text" name="firstname" placeholder="First Name" required>
+            <input type="text" name="secondname" placeholder="Second Name" required>
+            <input type="text" name="phoneNumber" placeholder="Phone Number"  maxlength="11" minlength="11" required>
+            <h5 class="important-text">Enter an available Phone number to call you when the order is near to you.</h5>
+
+            <select name="country" required>
+                <option value="" disabled selected>Select Your Country</option>
+                <option value="EGY">Egypt</option>
+                <option value="KSA">Saudi Arabia</option>
+                <option value="UAE">United Arab Emirates</option>
+                <option value="MOR">Morocco</option>
+                <option value="JOR">Jordan</option>
+                <option value="KWT">Kuwait</option>
+                <option value="SYR">Syria</option>
+                <option value="QAT">Qatar</option>
+            </select>
+
+            <select name="Payment method" required>
+                <option value="" disabled selected>Select Your Payment method</option>
+                <option value="Cash">Cash</option>
+                <option value="Visa">Visa</option>
+                <option value="Instapay">Instapay</option>
+            </select>
+
+            <input type="email" name="email" placeholder="Email Address" required>
+            <h5 class="important-text">Enter an available email to send the order details on.</h5><br>
+
+            <button type="submit">Register</button>
+        </form>
+
+
+        <a href="Home.html" class="back-btn">Back to Home</a>
+    </div>
+</body>
+</html>

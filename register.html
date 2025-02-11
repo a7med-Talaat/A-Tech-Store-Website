@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Prime Tech</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="register-container">
+        <h2>Register at Prime Tech</h2>
+        <form action="Home.html" method="POST">
+            <input type="text" name="firstname" placeholder="First Name" required>
+            <input type="text" name="secondname" placeholder="Second Name" required>
+            <input type="text" name="phoneNumber" placeholder="Phone Number"  maxlength="11" minlength="11" required>
+
+            <div class="gender-container">
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+            </div>
+
+            <input type="date" name="date" required>
+            
+            <select name="country" required>
+                <option value="" disabled selected>Select Your Country</option>
+                <option value="EGY">Egypt</option>
+                <option value="KSA">Saudi Arabia</option>
+                <option value="UAE">United Arab Emirates</option>
+                <option value="MOR">Morocco</option>
+                <option value="JOR">Jordan</option>
+                <option value="KWT">Kuwait</option>
+                <option value="SYR">Syria</option>
+                <option value="QAT">Qatar</option>
+            </select>
+
+            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+            <button type="submit">Register</button>
+        </form>
+        <p>Already have an account? <a href="login.html">Login Here</a></p>
+
+        <a href="Home.html" class="back-btn">Back to Home</a>
+    </div>
+</body>
+</html>
